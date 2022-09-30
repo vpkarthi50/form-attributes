@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta name="viewport" context="width=device-width,initial-scale=1.0">
+	<title>Table</title>
+	<style>
+		form{
+			display:inline-block;
+		}
+		ul{
+			list-style:none;
+		}
+		li{
+			padding:10px;
+		}
+	</style>
+	</head>
+	<body>
+		<form>
+			<fieldset>
+				<legend>Form Attributes</legend>
+				<ul>
+					<li>
+						<label for="fname">Enter your First Name</label>
+						<input type="hidden" id="empid" name="empid" value="4657">
+						<input type="text" id="fname" required>
+					</li>	
+					<li>
+						<label for="email">Enter your email Address</label>
+						<input type="email">
+					</li>
+					<li>
+						<label for="telnum">Enter your Mobile number</label>
+						<input type="tel" id="telnum" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="000-000-0000">
+					</li>
+					<li>
+						<label for="psw">Enter Your Password</label>
+						<input type="password" minlength="8">
+					</li>
+					<li>
+						<label> Select a gender</label>
+						<input type="radio" name="gender" id="male">
+						<label for="male"> Male</label>
+						<input type="radio" name="gender" id="Female">
+						<label for="female">Female</label>
+					</li>
+					<li>
+						<label for="dates">Select a DOB : </label>
+						<input type="date" id="dates">
+					</li>
+					<li>
+						<label for="tym">Select the time : </label>
+						<input type="time" id="tym">
+					</li>
+					<li>
+						<label for="date-local">select the local Time : </label>
+						<input type="datetime-local" id="date-local">
+					</li>
+					<li>
+						<label for="mon">select a month : </label>
+						<input type="month" id="mon">
+					</li>
+					<li>
+						<label for="weeks">Select a Week : </label>
+						<input type="week" id="weeks">
+					</li>
+					<li>
+						<label>select Your Meal Type : </label>
+						<input type="checkbox">
+						<label for="check">veg</label>
+						<input type="checkbox" checked>
+						<label for="check">Non-veg</label>
+					</li>
+					<li>
+						<label for="colo">Select your Favourite colors</label>
+						<input type="color" id="colo">
+					</li>
+					<li>
+						<label for="num">Enter Your Favourite Number</label>
+						<input type="number" id="num">
+					</li>
+					<li>
+						<label for="rang">Select a range between 1 to 100</label>
+						<input type="range" min="0" max="100" value="40">
+					</li>
+					<li>
+						<label>Upload your recent passport size photo</label>
+						<input type="file">
+					</li>
+					<li>
+						<label for="submit">Click here to Submit</label>
+						<input type="button" id="submit" value="button">
+						<input type="image" src="apple-touch-icon.png" width="25" height="30">
+					</li>
+					<li>
+						<input type="reset">
+					</li>
+					<li>
+						<label for="ysearch">Search In Our Site</label>
+						<input type="search" id="ysearch"><input type="submit">
+					</li>
+					<li>
+						<label for="link">Type a URL here</label>
+						<input type="url">
+					</li>
+				</ul>
+			</fieldset>
+		</form>
+	</body>
+</html>
